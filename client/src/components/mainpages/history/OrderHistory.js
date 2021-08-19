@@ -8,7 +8,7 @@ function OrderHistory() {
     const [history, setHistory] = state.userAPI.history
     const [isAdmin] = state.userAPI.isAdmin
     const [token] = state.token
-    
+
 
     useEffect(() => {
         if(token){
@@ -31,16 +31,14 @@ function OrderHistory() {
 
     return (
         <div className="history-page">
-            <h2>History</h2>
-
-            <h4>You have {history.length} ordered</h4>
+            <h4>You have {history.length} orders</h4>
 
             <table>
                 <thead>
                     <tr>
                         <th>Payment ID</th>
                         <th>Date of Purchased</th>
-                        <th></th>
+                        <th>History</th>
                     </tr>
                 </thead>
                 <tbody>
