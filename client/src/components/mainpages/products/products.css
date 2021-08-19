@@ -21,15 +21,21 @@
 }
 .delete-all span{
     text-transform: uppercase;
-    color: rgb(3, 165, 206);
+    color: black;
     letter-spacing: 1.3px;
+    font-weight: bold;
+
 }
 .delete-all button{
-    border: 1px solid crimson;
+    background-color:crimson;
     padding: 10px 25px;
-    color: crimson;
+    color: white;
     text-transform: uppercase;
+    font-weight: bold;
+
 }
+
+
 
 /* ------------ Filters Menu ----------------- */
 .filter_menu{

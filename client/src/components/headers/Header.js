@@ -2,7 +2,8 @@ import React, {useContext, useState} from 'react'
 import {GlobalState} from '../../GlobalState'
 import Menu from './icon/menu.svg'
 import Close from './icon/close.svg'
-import Cart from './icon/cart.svg'
+import Cart from './icon/cart.png'
+import Logo from './icon/logo.png'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
@@ -52,8 +53,9 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Control Panel' : 'Great Smoky Extracts'}</Link>
+                    <Link to="/">{isAdmin ? 'Control Panel' :   <img src={Logo} alt="" width="30%" />}</Link>
                 </h1>
+
             </div>
 
             <ul style={styleMenu}>
@@ -62,8 +64,10 @@ function Header() {
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login">Login</Link></li>
                 }
+                 <li><Link to="/about">About Us</Link></li>
+                 <li><Link to="/knowledge">Knowledge Base</Link></li>
 
                 <li onClick={() => setMenu(!menu)}>
                     <img src={Close} alt="" width="30" className="menu" />
@@ -72,11 +76,10 @@ function Header() {
             </ul>
 
             {
-                isAdmin ? ''
-                :<div className="cart-icon">
+                isAdmin ? '' : <div className="cart-icon">
                     <span>{cart.length}</span>
                     <Link to="/cart">
-                        <img src={Cart} alt="" width="30" />
+                        <img src={Cart} alt="" width="50" />
                     </Link>
                 </div>
             }

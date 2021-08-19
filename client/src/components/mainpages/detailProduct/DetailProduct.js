@@ -35,13 +35,13 @@ function DetailProduct() {
                     <p>{detailProduct.content}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
-                        Buy Now
+                        Add to cart
                     </Link>
                 </div>
             </div>
 
             <div>
-                <h2>Related products</h2>
+                <h2>Related Products</h2>
                 <div className="products">
                     {
                         products.map(product => {

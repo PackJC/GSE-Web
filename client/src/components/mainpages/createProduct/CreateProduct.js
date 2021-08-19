@@ -53,7 +53,7 @@ function CreateProduct() {
         try {
             if(!isAdmin) return alert("You're not an admin")
             const file = e.target.files[0]
-            
+
             if(!file) return alert("File not exist.")
 
             if(file.size > 1024 * 1024) // 1mb
@@ -133,7 +133,7 @@ function CreateProduct() {
                         <span onClick={handleDestroy}>X</span>
                     </div>
                 }
-                
+
             </div>
 
             <form onSubmit={handleSubmit}>
@@ -146,7 +146,7 @@ function CreateProduct() {
                 <div className="row">
                     <label htmlFor="title">Title</label>
                     <input type="text" name="title" id="title" required
-                    value={product.title} onChange={handleChangeInput} />
+                    value={product.title} rows="2" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">

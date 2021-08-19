@@ -60,13 +60,13 @@ function Products() {
     return (
         <>
         <Filters />
-        
+
         {
-            isAdmin && 
+            isAdmin &&
             <div className="delete-all">
                 <span>Select all</span>
                 <input type="checkbox" checked={isCheck} onChange={checkAll} />
-                <button onClick={deleteAll}>Delete ALL</button>
+                <button onClick={deleteAll}>Delete Selected</button>
             </div>
         }
 
@@ -76,7 +76,7 @@ function Products() {
                     return <ProductItem key={product._id} product={product}
                     isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
                 })
-            } 
+            }
         </div>
 
         <LoadMore />

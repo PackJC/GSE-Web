@@ -77,8 +77,8 @@ function Cart() {
     }
 
 
-    if(cart.length === 0) 
-        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
+    if(cart.length === 0)
+        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2>
 
     return (
         <div>
@@ -99,8 +99,8 @@ function Cart() {
                                 <span>{product.quantity}</span>
                                 <button onClick={() => increment(product._id)}> + </button>
                             </div>
-                            
-                            <div className="delete" 
+
+                            <div className="delete"
                             onClick={() => removeProduct(product._id)}>
                                 X
                             </div>
@@ -110,7 +110,6 @@ function Cart() {
             }
 
             <div className="total">
-                <h3>Total: $ {total}</h3>
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />

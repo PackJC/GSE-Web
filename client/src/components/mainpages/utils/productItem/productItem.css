@@ -3,7 +3,7 @@
     overflow: hidden;
     height: 500px;
     padding: 15px;
-    box-shadow: 0 0 15px #ddd;
+    box-shadow: 0 0 10px #ddd;
     margin: 10px 0;
     position: relative;
 }
@@ -29,9 +29,14 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    height: 70px;
+    height: 50px;
     overflow: hidden;
     color: #323232;
+}
+
+.product_card{
+  background-color: white;
+
 }
 .row_btn{
     width: 100%;
@@ -53,7 +58,16 @@
     margin: auto;
     padding: 10px;
 }
-
+#btn_view{
+    background: orange;
+    margin: auto;
+    padding: 10px;
+}
+#btn_del{
+    background: red;
+    margin: auto;
+    padding: 10px;
+}
 .product_card input{
     position: absolute;
     width: 25px;
