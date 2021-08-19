@@ -65,7 +65,7 @@ const productCtrl = {
     },
     createProduct: async(req, res) =>{
         try {
-            const {product_id, title, price, description, content, images, category} = req.body;
+            const {product_id, title, price, description, content, images, category, amount} = req.body;
             if(!images) return res.status(400).json({msg: "Image Required"})
 
             const product = await Products.findOne({product_id})
@@ -73,7 +73,7 @@ const productCtrl = {
                 return res.status(400).json({msg: "This product already exists."})
 
             const newProduct = new Products({
-                product_id, title, price, description, content, images, category
+                product_id, title, price, description, content, images, category, amount
             })
 
             await newProduct.save()
@@ -93,7 +93,7 @@ const productCtrl = {
     },
     updateProduct: async(req, res) =>{
         try {
-            const {title, price, description, content, images, category} = req.body;
+            const {title, price, description, content, images, category, amount} = req.body;
             if(!images) return res.status(400).json({msg: "Image Required"})
 
             await Products.findOneAndUpdate({_id: req.params.id}, {

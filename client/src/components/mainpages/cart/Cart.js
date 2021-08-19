@@ -92,13 +92,13 @@ function Cart() {
 
                             <h3>$ {product.price * product.quantity}</h3>
                             <p>{product.description}</p>
-                            <p>{product.content}</p>
 
                             <div className="amount">
                                 <button onClick={() => decrement(product._id)}> - </button>
                                 <span>{product.quantity}</span>
                                 <button onClick={() => increment(product._id)}> + </button>
                             </div>
+                            <p>{product.content}</p>
 
                             <div className="delete"
                             onClick={() => removeProduct(product._id)}>

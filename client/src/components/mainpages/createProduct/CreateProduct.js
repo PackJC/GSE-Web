@@ -11,6 +11,7 @@ const initialState = {
     description: '',
     content: '',
     category: '',
+    amount:0,
     _id: ''
 }
 
@@ -154,7 +155,11 @@ function CreateProduct() {
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput} />
                 </div>
-
+                <div className="row">
+                    <label htmlFor="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" required
+                    value={product.amount} onChange={handleChangeInput} />
+                </div>
                 <div className="row">
                     <label htmlFor="description">Description</label>
                     <textarea type="text" name="description" id="description" required
