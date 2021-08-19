@@ -9,7 +9,6 @@
     max-width: 450px;
     height: 500px;
     width: 100%;
-    border: 1px solid #ddd;
     padding: 15px;
     margin: 20px;
     position: relative;
@@ -28,7 +27,7 @@
     top:0;
     left: 0;
     background: white;
-    color: rgb(250, 200, 107);
+    color:  #A4C5AF;
     font-size: 17rem;
     text-align: center;
     cursor: pointer;
@@ -79,7 +78,7 @@
 .create_product form button{
     width: 200px;
     height: 40px;
-    background: #555;
+    background: #A4C5AF;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;

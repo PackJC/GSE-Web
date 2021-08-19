@@ -31,7 +31,7 @@ function DetailProduct() {
                         <h2>{detailProduct.title}</h2>
                     </div>
                     <span>$ {detailProduct.price}</span>
-                    
+
                     <p>{detailProduct.description}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
