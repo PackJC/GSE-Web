@@ -97,7 +97,7 @@ const productCtrl = {
             if(!images) return res.status(400).json({msg: "Image Required"})
 
             await Products.findOneAndUpdate({_id: req.params.id}, {
-                title, price, description, content, images, category
+                title, price, description, content, images, category, amount
             })
 
             res.json({msg: "Updated a Product"})

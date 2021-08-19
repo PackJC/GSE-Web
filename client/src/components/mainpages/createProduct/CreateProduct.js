@@ -11,7 +11,7 @@ const initialState = {
     description: '',
     content: '',
     category: '',
-    amount:0,
+    amount: 0,
     _id: ''
 }
 
@@ -156,7 +156,7 @@ function CreateProduct() {
                     value={product.price} onChange={handleChangeInput} />
                 </div>
                 <div className="row">
-                    <label htmlFor="amount">Amount</label>
+                    <label htmlFor="number">Amount</label>
                     <input type="number" name="amount" id="amount" required
                     value={product.amount} onChange={handleChangeInput} />
                 </div>
