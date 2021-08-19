@@ -53,25 +53,27 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Control Panel' :   <img src={Logo} alt="" width="30%" />}</Link>
+                    <Link to="/"><img src={Logo} alt="" width="30%" /></Link>
                 </h1>
 
             </div>
 
             <ul style={styleMenu}>
                 <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/knowledge">Knowledge Base</Link></li>
 
                 {isAdmin && adminRouter()}
 
                 {
                     isLogged ? loggedRouter() : <li><Link to="/login">Login</Link></li>
                 }
-                 <li><Link to="/about">About Us</Link></li>
-                 <li><Link to="/knowledge">Knowledge Base</Link></li>
 
                 <li onClick={() => setMenu(!menu)}>
                     <img src={Close} alt="" width="30" className="menu" />
                 </li>
+
+                
 
             </ul>
 

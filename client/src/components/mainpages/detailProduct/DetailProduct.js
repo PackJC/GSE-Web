@@ -32,11 +32,12 @@ function DetailProduct() {
                     </div>
                     <span>$ {detailProduct.price}</span>
                     <p>{detailProduct.description}</p>
-                    <p>{detailProduct.content}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
                     </Link>
+                    <p>{detailProduct.content}</p>
+
                 </div>
             </div>
 

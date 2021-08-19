@@ -1,5 +1,5 @@
 header{
-    min-height: 70px;
+    min-height: 0%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -10,7 +10,9 @@ header{
 }
 header .logo{
     flex: 1;
+
 }
+
 header a{
     text-transform: uppercase;
     color: black;

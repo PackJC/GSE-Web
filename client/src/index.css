@@ -9,7 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  background-color:#A4C5AF;
+  background-color:white;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,7 +20,7 @@ code {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  background-color:#A4C5AF;
+  background-color:white;
 
 }
 a{
@@ -64,7 +64,7 @@ button{
 /* ----------------- Responsive ------------------ */
 @media (max-width: 820px){
   header .logo{
-    min-width: 115px;
+    min-width: 0%;
     flex: none;
   }
   header ul{
