@@ -4,6 +4,10 @@ import Products from './products/Products'
 import DetailProduct from './detailProduct/DetailProduct'
 import Login from './auth/Login'
 import Register from './auth/Register'
+
+import About from './pages/about'
+import Knowledge from './pages/knowledge'
+
 import OrderHistory from './history/OrderHistory'
 import OrderDetails from './history/OrderDetails'
 import Cart from './cart/Cart'
@@ -23,6 +27,9 @@ function Pages() {
     return (
         <Switch>
             <Route path="/" exact component={Products} />
+            <Route path="/about" exact component={About} />
+            <Route path="/knowledge" exact component={Knowledge} />
+
             <Route path="/detail/:id" exact component={DetailProduct} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
