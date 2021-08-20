@@ -5,6 +5,26 @@
     padding: 30px;
     margin: 50px auto;
 }
+.page{
+    max-width: 800px;
+    border: 2px solid #A4C5AF;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 50px auto;
+}
+.aboutUs{
+  text-align: center;
+  padding: 30px;
+
+}
+.blurb{
+  margin: 50px auto;
+
+}
+.contactus{
+  text-align: center;
+
+}
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;

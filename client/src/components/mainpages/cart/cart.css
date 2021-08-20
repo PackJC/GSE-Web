@@ -1,6 +1,5 @@
 .cart{
     position: relative;
-    border: 1px solid #ccc;
     transform: scaleY(0.98);
     background-color: white;
 }
@@ -22,17 +21,20 @@
     cursor: pointer;
 }
 .total{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: absolute;
+  right: 50%;
+}
 
-}
-.total h3{
-    color: white;
-}
 .amount button:hover{
 
     background-color:gray;
+}
+.box-detail{
+  height: 20%;
+  font-size: smaller;
+}
+
+.detail{
+  height:10%;
+
 }
