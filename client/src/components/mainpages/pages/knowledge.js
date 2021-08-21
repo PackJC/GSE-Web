@@ -4,12 +4,49 @@ export default function Knowledge(){
   return(
     <div>
       <div class="page">
-        <p class="aboutUs">THC-O Information Center</p>
-        <p class="blurb">THC acetate ester can reportedly be synthesized from THC[1][2] or from THCA. The acetylation of THC does not change the properties of the compound to the same extent as with other acetate esters, as the parent compound (THC) is already highly lipophilic, but potency is nonetheless increased to some extent.[citation needed] This derivative of THC is notable in that it is one of the few analogues of THC to have been encountered as a recreational drug sold and used in a highly pure smokable form.
+        <p class="aboutUs">Knowledge Center</p>
+        <p>
+          Is THC-O Legal?
         </p>
-        <p class="contactus">Contact us</p>
-        <p class="contactus">admin@greatsmokyextracts.com</p>
+        <p>
+          Yes, it is legal.
+        </p>
+        <br/>
+        <hr/>
+        <br/>
+        <p>
+          Is this Fake/Synthetic?
+        </p>
+        <p>
+          No, it is not fake or synthetic. It is made in a lab from Delta-8 THC distillate.
+        </p>
+        <br/>
+        <hr/>
+        <br/>
+        <p>
+        Where are the lab results?
+        </p>
+
+
+        <br/>
+
+        <hr/>
+        <br/>
+        <p>
+          Will a THC-O product make me test positive during a drug screening?
+        </p>
+        <br/>
+
+
+
+
+
+        <p class="aboutUs">Don't see your question?</p>
+        <p class="aboutUs">Email us</p>
 
       </div>
-    </div>  )
+    </div>
+
+
+  )
 }

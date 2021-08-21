@@ -90,9 +90,9 @@ function Cart() {
                 cart.map(product => (
                   <div className="cartContainer" >
                     <div className="cartItem" key={product._id}>
-                    <div className="column" >
-                      <img src={product.images.url} alt=""/>
-                    </div>
+                      <div className="column" >
+                        <img src={product.images.url} alt=""/>
+                      </div>
                     <div className="column" >
                         <h2>{product.title}</h2>
                         <div className="column" >
@@ -117,18 +117,14 @@ function Cart() {
 
                 ))
             }
-            <div className="cartContainerTotal" >
-              <div className="columnCheckout" >
-              <div className="paypalButton" >
+            <p className="cartTotal">Subtotal ${total.toFixed(2)}</p>
+            <div className="row">
+              <div className="columnCheck" >
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
                 </div>
               </div>
-              <div className="columnCheckout" >
-                  <p className="cartTotal">Subtotal ${total.toFixed(2)}</p>
-              </div>
-            </div>
       </div>
 
     )

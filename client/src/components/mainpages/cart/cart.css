@@ -9,13 +9,15 @@
     font-weight:lighter;
     font-size:2vw;
     font-weight:bold;
+
 }
 .amount button{
     width: 15%;
     height: 15%;
     border: 1px solid #777;
-    border-radius: 80%;
-    font-size:2vw;
+    border-radius: 20px;
+    font-size:1vw;
+    font-weight:bold;
 
 }
 .delete{
@@ -32,7 +34,7 @@
 }
 
 .amount button:hover{
-  border-radius: 80%;
+  border-radius: 20px;
   background-color:#A4C5AF;
 }
 .box-detail{
@@ -51,41 +53,30 @@
   color:#A4C5AF;
   font-size: x-large;
 }
-.checkoutPrice{
-  color:black;
+.price{
+  color:#A4C5AF;
   font-size: x-large;
-  font-size:2vw;
-
 }
-.cartDesc{
+.cartDesc{font-size:1vw;
+
 }
 .cartTotal{
   color:black;
-  font-size: x-large;
+  font-size: 2vw;
   font-weight: bold;
-  float: right;
-  font-size:2vw;
-  width: 80%;
+  margin-left: 40%;
 
 }
 
 .paypalButton{
-padding-top:15%;
 }
 .cartContainer {
-  width: 100%;
+  width: 60%;
   padding: 20px;
-  height: 10%;
+  height: 100px;
   object-fit: cover;
   display: block;
   margin: auto;
-}
-.cartContainerTotal {
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-  margin: auto;
-
 }
 .cartItem img{
   width: 50%;
@@ -94,19 +85,9 @@ padding-top:15%;
 .column {
   float: left;
   width: 25%;
-  font-size:2vw;
-
-}
-
-.column h2{
-  font-size:2vw;
-}
-.column p{
   font-size:1vw;
 
 }
-
-.columnCheckout {
-  width: 50%;
-  margin: auto;
+.columnCheck{
+  margin-bottom:50px;
 }
