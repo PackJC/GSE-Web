@@ -27,7 +27,7 @@
 
 }
 .delete-all button{
-    background-color:crimson;
+    background-color:#CD5C5C;
     padding: 10px 25px;
     color: white;
     text-transform: uppercase;
@@ -35,7 +35,14 @@
     border-radius: 8px;
 }
 
+.delete-all button:hover{
+  border: 1px solid #CD5C5C;
+  background-color: white;
+  color: #CD5C5C;
+  border-radius: 8px;
+  padding: 10px 25px;
 
+}
 
 /* ------------ Filters Menu ----------------- */
 .filter_menu{

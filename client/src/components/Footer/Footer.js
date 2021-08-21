@@ -5,38 +5,35 @@ Row,
 Column,
 FooterLink,
 Heading,
+Copyright
 } from "./FooterStyles";
 
 const Footer = () => {
 return (
-
 	<Container>
 		<Row>
 		<Column>
-			<Heading>Category</Heading>
-			<FooterLink href="#">Cartridges</FooterLink>
-			<FooterLink href="#">Distillate</FooterLink>
-			<FooterLink href="#">Edibles</FooterLink>
+			<Heading>Important Links</Heading>
+			<FooterLink href="/shop">Shop</FooterLink>
+			<FooterLink href="/knowledge">Knowledge Base</FooterLink>
+
 		</Column>
 		<Column>
 			<Heading>Customer Service</Heading>
-			<FooterLink href="#">About Us</FooterLink>
-			<FooterLink href="#">Contact Us</FooterLink>
-			<FooterLink href="#">Return Policy</FooterLink>
-			<FooterLink href="#">Shipping Policy</FooterLink>
+			<FooterLink href="/about">About Us</FooterLink>
+			<FooterLink href="/contact">Contact Us</FooterLink>
 		</Column>
 		<Column>
-			<Heading>Partner Applications</Heading>
-			<FooterLink href="#">Wholesale Application</FooterLink>
-			<FooterLink href="#">Distributor Application</FooterLink>
-		</Column>
+			<Heading>Policies</Heading>
+			<FooterLink href="/return">Return Policy</FooterLink>
+			<FooterLink href="/shipping">Shipping Policy</FooterLink>		</Column>
     <Column>
     			<Heading>Social Media</Heading>
-    			<FooterLink href="#">Instagram</FooterLink>
-    			<FooterLink href="#">Reddit</FooterLink>
-    			<FooterLink href="#">Snapchat</FooterLink>
+    			<FooterLink href="https://www.instagram.com/greatsmokyextracts">Instagram</FooterLink>
+    			<FooterLink href="https://www.reddit.com/u/greatsmokyextracts">Reddit</FooterLink>
     		</Column>
 		</Row>
+		<Copyright> © 2021 Great Smoky Extracts </Copyright>
 	</Container>
 );
 };

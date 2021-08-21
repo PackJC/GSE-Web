@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 function Register() {
@@ -19,7 +18,7 @@ function Register() {
 
             localStorage.setItem('firstLogin', true)
 
-            
+
             window.location.href = "/";
         } catch (err) {
             alert(err.response.data.msg)
@@ -29,7 +28,7 @@ function Register() {
     return (
         <div className="login-page">
             <form onSubmit={registerSubmit}>
-                <h2>Register</h2>
+                <h2>Create an account </h2>
                 <input type="text" name="name" required
                 placeholder="Name" value={user.name} onChange={onChangeInput} />
 
@@ -40,8 +39,7 @@ function Register() {
                 placeholder="Password" value={user.password} onChange={onChangeInput} />
 
                 <div className="row">
-                    <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
+                    <button className="registerButton" type="submit">Create Account</button>
                 </div>
             </form>
         </div>

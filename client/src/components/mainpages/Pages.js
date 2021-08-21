@@ -7,6 +7,8 @@ import Register from './auth/Register'
 
 import About from './pages/about'
 import Knowledge from './pages/knowledge'
+import Shipping from './pages/shipping'
+import Return from './pages/return'
 
 import OrderHistory from './history/OrderHistory'
 import OrderDetails from './history/OrderDetails'
@@ -29,6 +31,8 @@ function Pages() {
             <Route path="/" exact component={Products} />
             <Route path="/about" exact component={About} />
             <Route path="/knowledge" exact component={Knowledge} />
+            <Route path="/shipping" exact component={Shipping} />
+            <Route path="/return" exact component={Return} />
 
             <Route path="/detail/:id" exact component={DetailProduct} />
 

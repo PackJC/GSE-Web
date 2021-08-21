@@ -36,10 +36,16 @@ function Login() {
                 placeholder="Password" value={user.password} onChange={onChangeInput} />
 
                 <div className="row">
-                    <button type="submit">Login</button>
-                    <Link to="/register">Register</Link>
+                    <button className="loginButton"type="submit">Login</button>
+                    <Link to="/register">
+     <button className="registerButton"type="button">
+          Register
+     </button>
+ </Link>
                 </div>
             </form>
+            <a className="password" href = "mailto: admin@greatsmokyextracts.com">Forgot password?</a>
+
         </div>
     )
 }

@@ -28,7 +28,7 @@ function Categories() {
             setOnEdit(false)
             setCategory('')
             setCallback(!callback)
-            
+
         } catch (err) {
             alert(err.response.data.msg)
         }
@@ -67,7 +67,7 @@ function Categories() {
                     categories.map(category => (
                         <div className="row" key={category._id}>
                             <p>{category.name}</p>
-                            <div>
+                            <div className="editButtons">
                                 <button onClick={() => editCategory(category._id, category.name)}>Edit</button>
                                 <button onClick={() => deleteCategory(category._id)}>Delete</button>
                             </div>

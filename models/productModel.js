@@ -45,6 +45,10 @@ const productSchema = new mongoose.Schema({
     amount:{
         type: Number,
         default: 0
+    },
+    reviews: {
+        type: Array,
+        default: []
     }
 }, {
     timestamps: true //important

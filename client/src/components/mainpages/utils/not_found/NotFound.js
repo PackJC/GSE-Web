@@ -1,9 +1,12 @@
 import React from 'react'
+import Logo from './404Image.jpg'
 
 function NotFound() {
     return (
-        <div>
-            404 | Not Found
+        <div className="forohfor">
+          <p>404 | Not Found</p>
+          <img src={Logo} alt="" />
+
         </div>
     )
 }

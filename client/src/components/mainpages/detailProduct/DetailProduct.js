@@ -24,16 +24,15 @@ function DetailProduct() {
 
     return (
         <>
-            <div className="detail">
-                <img src={detailProduct.images.url} alt="" />
+            <div className="detail detail1">
+                    <img src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
-                        <h2>{detailProduct.title}</h2>
+                    <h2>{detailProduct.title}</h2>
                     </div>
                     <span>$ {detailProduct.price}</span>
-
                     <p>{detailProduct.description}</p>
-                    <Link to="/cart" className="cart"
+                    <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
                     </Link>
@@ -49,6 +48,7 @@ function DetailProduct() {
                         products.map(product => {
                             return product.category === detailProduct.category
                                 ? <ProductItem key={product._id} product={product} /> : null
+
                         })
                     }
                 </div>

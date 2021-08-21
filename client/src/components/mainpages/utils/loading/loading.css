@@ -1,25 +1,17 @@
-.load-page{
-    background: #fff;
-    overflow: hidden;
+.forohfor img{
+  margin: auto;
+  width: 25%;
+  height: 25%;
 }
-.loader{
-    width: 300px;
-    height: 300px;
-    margin: auto;
+
+.forohfor p{
+  font-size: 42px;
+  color: #A4C5AF;
+  font-weight: bold;
+  text-align: center;
+
 }
-.loader div{
-    width: calc(100% - 15px);
-    height: calc(100% - 15px);
-    border: 2px solid #fff;
-    border-top: 2px solid #A4C5AF;
-    border-radius: 50%;
-    animation: rotate 10s linear infinite alternate-reverse;
-}
-@keyframes rotate{
-    50%{
-        transform: rotate(80deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.forohfor{
+  text-align: center;
+
 }

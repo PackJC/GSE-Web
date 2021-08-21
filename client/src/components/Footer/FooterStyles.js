@@ -18,8 +18,10 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1000px;
+	max-width: 100%;
 	margin: 0 auto;
+	border-top: 1px solid lightgray;
+
 
 	/* background: red; */
 `
@@ -34,6 +36,9 @@ margin-left: 60px;
 
 export const Row = styled.div`
 display: grid;
+max-width: 1000px;
+margin: 0 auto;
+
 grid-template-columns: repeat(auto-fill,
 						minmax(185px, 1fr));
 grid-gap: 20px;
@@ -61,4 +66,9 @@ font-size: 12px;
 color: darkgray;
 margin-top: 90%;
 font-weight: bold;
+`;
+export const Copyright = styled.p`
+font-size: 12px;
+color: darkgray;
+margin: auto;
 `;

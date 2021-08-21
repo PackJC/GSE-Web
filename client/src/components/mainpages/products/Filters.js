@@ -32,7 +32,7 @@ function Filters() {
             </div>
 
             <input type="text" value={search} placeholder="Search our store"
-            onChange={e => setSearch(e.target.value.toLowerCase())} />
+            onChange={e => setSearch(e.target.value.toString())} />
 
             <div className="row sort">
                 <span> </span>
