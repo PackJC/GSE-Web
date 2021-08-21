@@ -42,16 +42,8 @@ function DetailProduct() {
             </div>
 
             <div>
-                <h2>Related Products</h2>
-                <div className="products">
-                    {
-                        products.map(product => {
-                            return product.category === detailProduct.category
-                                ? <ProductItem key={product._id} product={product} /> : null
-
-                        })
-                    }
-                </div>
+            /*
+*/
             </div>
         </>
     )
