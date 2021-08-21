@@ -84,3 +84,10 @@
     letter-spacing: 2px;
     font-weight: 700;
 }
+.row select{
+}
+
+.create_product button, select, textarea{
+  border-radius: 8px;
+
+}

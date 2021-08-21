@@ -7,12 +7,15 @@
     color: black;
     padding: 0 20px;
     font-weight:lighter;
+    font-size:2vw;
+    font-weight:bold;
 }
 .amount button{
-    width: 40px;
-    height: 40px;
+    width: 15%;
+    height: 15%;
     border: 1px solid #777;
-    border-radius: 20px;
+    border-radius: 80%;
+    font-size:2vw;
 
 }
 .delete{
@@ -29,8 +32,8 @@
 }
 
 .amount button:hover{
-  border-radius: 20px;
-  background-color:gray;
+  border-radius: 80%;
+  background-color:#A4C5AF;
 }
 .box-detail{
   font-size: smaller;
@@ -47,15 +50,63 @@
 .price{
   color:#A4C5AF;
   font-size: x-large;
-  padding:20px;
 }
+.checkoutPrice{
+  color:black;
+  font-size: x-large;
+  font-size:2vw;
 
+}
 .cartDesc{
 }
 .cartTotal{
-  margin-left:35%;
-  color:red;
+  color:black;
   font-size: x-large;
   font-weight: bold;
+  float: right;
+  font-size:2vw;
+  width: 80%;
 
+}
+
+.paypalButton{
+padding-top:15%;
+}
+.cartContainer {
+  width: 100%;
+  padding: 20px;
+  height: 10%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.cartContainerTotal {
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  margin: auto;
+
+}
+.cartItem img{
+  width: 50%;
+  height: 50%;
+}
+.column {
+  float: left;
+  width: 25%;
+  font-size:2vw;
+
+}
+
+.column h2{
+  font-size:2vw;
+}
+.column p{
+  font-size:1vw;
+
+}
+
+.columnCheckout {
+  width: 50%;
+  margin: auto;
 }

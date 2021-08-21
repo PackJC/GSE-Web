@@ -1,16 +1,16 @@
 .detail{
     display: flex;
     padding: 80px;
-    font-size: 100%;
+    font-size:1vw;
 
 }
 .detail img{
-    max-width: 300px;
-    width: 100%;
+    width: 50%;
     padding: 20px;
-    height: 350px;
+    height: auto;
     object-fit: cover;
     display: block;
+
 }
 .box-detail{
 }

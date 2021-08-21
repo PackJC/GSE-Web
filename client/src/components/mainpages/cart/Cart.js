@@ -85,34 +85,52 @@ function Cart() {
 
 
     return (
-        <div className="cartList">
+        <div>
             {
                 cart.map(product => (
-                    <div className="detail cart" key={product._id}>
-                    <img src={product.images.url} alt=""/>
-                        <div className="box-detail">
-                            <h2>{product.title}</h2>
-                            <h3 className="price">$ {(product.price * product.quantity).toFixed(2)}</h3>
-                            <div className="amount">
-                                <button onClick={() => decrement(product._id)}> - </button>
-                                <span>{product.quantity}</span>
-                                <button onClick={() => increment(product._id)}> + </button>
-                                <p className="cartDesc">{product.description}</p>
-                            </div>
+                  <div className="cartContainer" >
+                    <div className="cartItem" key={product._id}>
+                    <div className="column" >
+                      <img src={product.images.url} alt=""/>
+                    </div>
+                    <div className="column" >
+                        <h2>{product.title}</h2>
+                        <div className="column" >
+                        <p className="cartDesc">{product.description}</p>
+
                         </div>
                     </div>
+                    <div className="column" >
+                        <h3 className="checkoutPrice">$ {(product.price * product.quantity).toFixed(2)}</h3>
+                    </div>
+
+                            <div className="amount column">
+                                <button onClick={() => decrement(product._id)}>-</button>
+                                <span>{product.quantity}</span>
+                                <button onClick={() => increment(product._id)}> + </button>
+                              </div>
+
+                    </div>
+                  </div>
 
 
 
                 ))
             }
-            <p className="cartTotal">Total (Pre-Tax) ${total.toFixed(2)}</p>
-            <div className="detail cart ">
+            <div className="cartContainerTotal" >
+              <div className="columnCheckout" >
+              <div className="paypalButton" >
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
+                </div>
+              </div>
+              <div className="columnCheckout" >
+                  <p className="cartTotal">Subtotal ${total.toFixed(2)}</p>
+              </div>
             </div>
-        </div>
+      </div>
+
     )
 }
 

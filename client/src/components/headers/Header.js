@@ -53,7 +53,7 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/"><img src={Logo} alt="" width="30%" /></Link>
+                    <Link to="/"><img src={Logo} alt="" width="80" /></Link>
                 </h1>
 
             </div>
@@ -73,7 +73,7 @@ function Header() {
                     <img src={Close} alt="" width="30" className="menu" />
                 </li>
 
-                
+
 
             </ul>
 
