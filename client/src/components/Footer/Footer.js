@@ -14,14 +14,13 @@ return (
 		<Row>
 		<Column>
 			<Heading>Important Links</Heading>
-			<FooterLink href="/shop">Shop</FooterLink>
+			<FooterLink href="/">Shop</FooterLink>
 			<FooterLink href="/knowledge">Knowledge Base</FooterLink>
 
 		</Column>
 		<Column>
 			<Heading>Customer Service</Heading>
 			<FooterLink href="/about">About Us</FooterLink>
-			<FooterLink href="/contact">Contact Us</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Policies</Heading>

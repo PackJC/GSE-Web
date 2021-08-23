@@ -18,7 +18,6 @@ function Filters() {
     return (
         <div className="filter_menu">
             <div className="row">
-                <span> </span>
                 <select name="category" value={category} onChange={handleCategory} >
                     <option value=''>All Products</option>
                     {
@@ -35,7 +34,6 @@ function Filters() {
             onChange={e => setSearch(e.target.value.toString())} />
 
             <div className="row sort">
-                <span> </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
                     <option value='sort=-sold'>Best Selling</option>
                     <option value=''>Date, new to old</option>

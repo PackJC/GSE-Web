@@ -21,6 +21,7 @@ export const Container = styled.div`
 	max-height:20%;
 	margin: 0 auto;
 	border-top: 1px solid lightgray;
+	margin-top: 10%;
 
 
 	/* background: red; */
@@ -51,11 +52,10 @@ grid-column-gap: 15%;
 `;
 
 export const FooterLink = styled.a`
-color: darkgray;
-margin: 5px;
+color: #A4C5AF;
 font-size:1vw;
 text-decoration: none;
-
+margin:auto;
 &:hover {
 	color:  #A4C5AF;
 	transition: 200ms ease-in;
@@ -65,11 +65,10 @@ text-decoration: none;
 export const Heading = styled.p`
 font-size:1vw;
 color: darkgray;
-margin-top: 20%;
 font-weight: bold;
 `;
 export const Copyright = styled.p`
-font-size: 12px;
-color: darkgray;
+font-size: 0.5vw;
+color: #A4C5AF;
 margin: auto;
 `;

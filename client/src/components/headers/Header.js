@@ -51,14 +51,11 @@ function Header() {
                 <img src={Menu} alt="" width="30" />
             </div>
 
-            <div className="logo">
-                <h1>
-                    <Link to="/"><img src={Logo} alt="" width="80" /></Link>
-                </h1>
-
-            </div>
 
             <ul style={styleMenu}>
+            <li>
+                    <Link to="/"><img src={Logo} alt="" width="150" /></Link>
+            </li>
                 <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/knowledge">Knowledge Base</Link></li>
@@ -81,7 +78,7 @@ function Header() {
                 isAdmin ? '' : <div className="cart-icon">
                     <span>{cart.length}</span>
                     <Link to="/cart">
-                        <img src={Cart} alt="" width="50" />
+                        <img src={Cart} alt="" width="30" />
                     </Link>
                 </div>
             }

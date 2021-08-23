@@ -55,13 +55,20 @@ function OrderDetails() {
                         orderDetails.cart.map(item =>(
                         <tr key={item._id}>
                             <td><img src={item.images.url} alt="" /></td>
-                            <td>{item.title}</td>
+                            <td>
+                            {item.title}
+                            <br/>
+                            <button className="reviewButton">Leave a Review</button>
+
+
+                            </td>
+
                             <td>{item.quantity}</td>
                             <td>$ {item.price * item.quantity}</td>
                         </tr>
                         ))
                     }
-                    
+
                 </tbody>
             </table>
         </div>

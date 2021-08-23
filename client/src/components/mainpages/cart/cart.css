@@ -6,8 +6,7 @@
 .amount span{
     color: black;
     padding: 0 20px;
-    font-weight:lighter;
-    font-size:2vw;
+    font-size:1vw;
     font-weight:bold;
 
 }
@@ -61,32 +60,47 @@
 
 }
 .cartTotal{
-  color:black;
+  color:red;
   font-size: 2vw;
   font-weight: bold;
   margin-left: 40%;
 
 }
 
-.paypalButton{
+.columnCheck{
+  width:25%;
+  margin:auto;
+  padding: 1%;
+}
+.box{
+  border: 2px solid #A4C5AF;
+  border-radius: 5px;
+  margin: 5%;
 }
 .cartContainer {
-  width: 60%;
+  width: 70%;
   padding: 20px;
   height: 100px;
   object-fit: cover;
   display: block;
   margin: auto;
+  background-color:yellow;
 }
 .cartItem img{
   width: 50%;
   height: 50%;
+
+}
+.cartItem{
+  padding: 5%;
 }
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right:2.5%;
   font-size:1vw;
-
+text-align: center;
 }
 .columnCheck{
   margin-bottom:50px;

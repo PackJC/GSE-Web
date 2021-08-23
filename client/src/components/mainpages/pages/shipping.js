@@ -23,6 +23,7 @@ export default function Shipping(){
           Individual Orders
           Orders typically ship from within 1-4 business days via USPS. If, after ordering, we discover an item is illegal in your state we reserve the right to cancel and refund the order.
         </p>
+
       </div>
     </div>
   )

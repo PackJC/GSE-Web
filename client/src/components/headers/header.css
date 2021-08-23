@@ -9,8 +9,7 @@ header{
     border-bottom: 1px solid #ddd;
 }
 header .logo{
-    flex: 1;
-
+  width:10%;
 }
 
 header a{

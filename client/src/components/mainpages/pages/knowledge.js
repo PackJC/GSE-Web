@@ -42,7 +42,7 @@ export default function Knowledge(){
 
 
         <p class="aboutUs">Don't see your question?</p>
-        <p class="aboutUs">Email us</p>
+        <a className="loginButton" href = "mailto: greatsmokyextracts@gmail.com">CONTACT US</a>
 
       </div>
     </div>

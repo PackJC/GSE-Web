@@ -11,7 +11,18 @@
     border-radius: 5px;
     padding: 30px;
     margin: 50px auto;
+    text-align: center;
 }
+.page a{
+  background: #A4C5AF;
+  padding: 10px 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .aboutUs{
   text-align: center;
   padding: 30px;
@@ -19,12 +30,10 @@
 }
 .blurb{
   margin: 50px auto;
-
-}
-.contactus{
   text-align: center;
 
 }
+
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;

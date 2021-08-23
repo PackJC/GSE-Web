@@ -44,7 +44,7 @@ function Login() {
  </Link>
                 </div>
             </form>
-            <a className="password" href = "mailto: admin@greatsmokyextracts.com">Forgot password?</a>
+            <a className="password" href = "mailto: greatsmokyextracts@gmail.com">Forgot password?</a>
 
         </div>
     )

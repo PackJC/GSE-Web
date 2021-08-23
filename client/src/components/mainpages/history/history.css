@@ -17,15 +17,31 @@
 }
 th, td{
     text-align: center;
-    padding: 10px;
     text-transform: capitalize;
+    font-size:1vw;
+
 }
 table a{
     color: rgb(3, 165, 206);
 }
 
 .history-page img{
-    width: 70px;
-    height: 100px;
-    object-fit: cover;
+    width: 50%;
+}
+
+.reviewButton{
+  width: 50%;
+  border-radius: 8px;
+
+  font-size:1vw;
+  background: #A4C5AF;
+  color: white;
+  text-transform: uppercase;
+}
+.reviewButton:hover{
+  width: 50%;
+  border-radius: 8px;
+  color: #A4C5AF;
+  background: white;
+  border: 1px solid #A4C5AF;
 }

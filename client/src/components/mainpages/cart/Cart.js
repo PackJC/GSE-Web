@@ -85,31 +85,26 @@ function Cart() {
 
 
     return (
-        <div>
+        <div className="box">
             {
                 cart.map(product => (
-                  <div className="cartContainer" >
+                  <div className="flex-container" >
                     <div className="cartItem" key={product._id}>
                       <div className="column" >
-                        <img src={product.images.url} alt=""/>
+                          <img src={product.images.url} alt=""/>
                       </div>
-                    <div className="column" >
-                        <h2>{product.title}</h2>
-                        <div className="column" >
-                        <p className="cartDesc">{product.description}</p>
-
-                        </div>
-                    </div>
-                    <div className="column" >
-                        <h3 className="checkoutPrice">$ {(product.price * product.quantity).toFixed(2)}</h3>
-                    </div>
-
-                            <div className="amount column">
-                                <button onClick={() => decrement(product._id)}>-</button>
-                                <span>{product.quantity}</span>
-                                <button onClick={() => increment(product._id)}> + </button>
-                              </div>
-
+                      <div className="column" >
+                          <h2>{product.title}</h2>
+                          <p className="cartDesc">{product.description}</p>
+                      </div>
+                      <div className="column" >
+                          <h3 className="checkoutPrice">$ {(product.price * product.quantity).toFixed(2)}</h3>
+                      </div>
+                      <div className="amount column">
+                          <button onClick={() => decrement(product._id)}>-</button>
+                          <span>{product.quantity}</span>
+                          <button onClick={() => increment(product._id)}> + </button>
+                      </div>
                     </div>
                   </div>
 
@@ -117,7 +112,7 @@ function Cart() {
 
                 ))
             }
-            <p className="cartTotal">Subtotal ${total.toFixed(2)}</p>
+            <p className="cartTotal">Subtotal: ${total.toFixed(2)}</p>
             <div className="row">
               <div className="columnCheck" >
                 <PaypalButton
