@@ -24,6 +24,8 @@ return (
 		</Column>
 		<Column>
 			<Heading>Policies</Heading>
+			<FooterLink href="/privacy">Privacy Policy</FooterLink>
+
 			<FooterLink href="/return">Return Policy</FooterLink>
 			<FooterLink href="/shipping">Shipping Policy</FooterLink>		</Column>
     <Column>

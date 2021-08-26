@@ -9,6 +9,8 @@ import About from './pages/about'
 import Knowledge from './pages/knowledge'
 import Shipping from './pages/shipping'
 import Return from './pages/return'
+import Privacy from './pages/privacy'
+
 
 import OrderHistory from './history/OrderHistory'
 import OrderDetails from './history/OrderDetails'
@@ -33,6 +35,7 @@ function Pages() {
             <Route path="/knowledge" exact component={Knowledge} />
             <Route path="/shipping" exact component={Shipping} />
             <Route path="/return" exact component={Return} />
+            <Route path="/privacy" exact component={Privacy} />
 
             <Route path="/detail/:id" exact component={DetailProduct} />
 

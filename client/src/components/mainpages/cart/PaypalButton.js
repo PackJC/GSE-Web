@@ -30,7 +30,7 @@ export default class PaypalButton extends React.Component {
 
         const client = {
             sandbox:    'AfZYzciSnejhMsUkT2wWtNfb-V-1U9H_f-5vu3e_L67d_WkFHLC1geGis1P7feG6Ep18c5pbTEMJrNzS',
-            production: 'YOUR-PRODUCTION-APP-ID',
+            production: 'AS4epHKr80NsAv7VyumzWQc_aQ1-sptNdbi8QZpZfCTljY7nYEGvfDG-5k9S3FrCHgVu5F78qow-ZLHg',
         }
         // In order to get production's app-ID, you will have to send your app to Paypal for approval first
         // For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"):

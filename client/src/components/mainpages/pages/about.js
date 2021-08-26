@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About(){
+export default function Privacy(){
   return(
     <div>
       <div class="page">
@@ -14,10 +14,6 @@ export default function About(){
 
       </div>
     </div>
-
-
-
-
 
 
   )
