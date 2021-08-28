@@ -3,7 +3,14 @@ import {useParams, Link} from 'react-router-dom'
 import {GlobalState} from '../../../GlobalState'
 import ProductItem from '../utils/productItem/ProductItem'
 
-
+function checkPrice(price){
+  if(price < 100){
+    return   <span style={{ color: "red" }}>${price}</span>
+  }
+  else{
+    return  <span>${price}</span>
+  }
+}
 function DetailProduct() {
     const params = useParams()
     const state = useContext(GlobalState)
@@ -30,7 +37,8 @@ function DetailProduct() {
                     <div className="row">
                     <h2>{detailProduct.title}</h2>
                     </div>
-                    <span>$ {detailProduct.price}</span>
+                    <span>$ {checkPrice(detailProduct.price)}</span>
+
                     <p>{detailProduct.description}</p>
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
