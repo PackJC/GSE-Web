@@ -44,6 +44,8 @@ function DetailProduct() {
                     <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
+                    <br/>
+                    <p>Testing Information: {detailProduct.testings}</p>}
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
