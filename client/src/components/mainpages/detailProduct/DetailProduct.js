@@ -40,13 +40,13 @@ function DetailProduct() {
 
                 </div>
             </div>
-            
+
             <div>
-                <h2>Related products</h2>
+                <h2>Related Products</h2>
                 <div className="products">
                     {
                         products.map(product => {
-                            return product.category === detailProduct.category
+                            return product.category === detailProduct.category && product._id !== detailProduct._id
                                 ? <ProductItem key={product._id} product={product} /> : null
                         })
                     }
