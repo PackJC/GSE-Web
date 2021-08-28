@@ -38,6 +38,7 @@ function DetailProduct() {
                     <h2>{detailProduct.title}</h2>
                     </div>
                     <span>{detailProduct.price}</span>
+                    <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
                     <Link to="/cart" className="cartButton"
