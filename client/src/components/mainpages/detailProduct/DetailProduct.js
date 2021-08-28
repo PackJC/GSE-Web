@@ -45,7 +45,7 @@ function DetailProduct() {
               <p>{detailProduct.description}</p>
               <br/>
               <button type="button" disabled className="cartButtonDisabled">
-                  Add to cart
+                  OUT OF STOCK
               </button>
               <p>{detailProduct.content}</p>
               <br/>
