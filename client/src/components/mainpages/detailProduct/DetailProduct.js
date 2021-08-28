@@ -42,7 +42,6 @@ function DetailProduct() {
                     </div>
                     <span>${detailProduct.price}</span>
                     <br/>
-                    <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
                     <br/>
                     <p>Testing Information: {detailProduct.testings}</p>}
@@ -51,7 +50,7 @@ function DetailProduct() {
                         Add to cart
                     </Link>
                     <p>{detailProduct.content}</p>
-
+                    <span>{checkStock(detailProduct.stock)}</span>
                 </div>
             </div>
 
