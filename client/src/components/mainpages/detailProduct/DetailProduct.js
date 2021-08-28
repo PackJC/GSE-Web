@@ -31,7 +31,46 @@ function DetailProduct() {
     },[params.id, products])
 
     if(detailProduct.length === 0) return null;
-    if(detailProduct.stock < 5) return (<p>low stock</p>);
+    if(detailProduct.stock < 1) return (
+      <>
+      <div className="detail detail1">
+              <img src={detailProduct.images.url} alt="" />
+          <div className="box-detail">
+              <div className="row">
+              <h2>{detailProduct.title}</h2>
+              </div>
+              <span>${detailProduct.price}</span>
+              <br/>
+              <span>{checkStock(detailProduct.stock)}</span>
+              <p>{detailProduct.description}</p>
+              <br/>
+              <button type="button" disabled>Click Me!</button>
+
+              <p>{detailProduct.content}</p>
+              <br/>
+
+              <p>View Certificate Of Analysis: {detailProduct.testing}</p>
+
+          </div>
+      </div>
+
+      <div>
+          <h2>Related Products</h2>
+          <div className="products">
+              {
+                  products.map(product => {
+                      return product.category === detailProduct.category && product._id !== detailProduct._id
+                          ? <ProductItem key={product._id} product={product} /> : null
+                  })
+              }
+          </div>
+      </div>
+      <div>
+
+      </div>
+        </>
+
+    );
     return (
         <>
             <div className="detail detail1">
