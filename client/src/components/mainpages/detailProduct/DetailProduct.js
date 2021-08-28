@@ -42,15 +42,17 @@ function DetailProduct() {
                     </div>
                     <span>${detailProduct.price}</span>
                     <br/>
+                    <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
                     <br/>
-                    <p>Testing Information: {detailProduct.testings}</p>}
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
                     </Link>
                     <p>{detailProduct.content}</p>
-                    <span>{checkStock(detailProduct.stock)}</span>
+                    <br/>
+                    <p>Testing Information: {detailProduct.testings}</p>
+
                 </div>
             </div>
 
