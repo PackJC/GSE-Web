@@ -37,7 +37,7 @@ function DetailProduct() {
                     <div className="row">
                     <h2>{detailProduct.title}</h2>
                     </div>
-                    <span>{detailProduct.price}</span>
+                    <span>${detailProduct.price}</span>
                     <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
