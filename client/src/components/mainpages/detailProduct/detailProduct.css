@@ -62,7 +62,7 @@
   padding: 6px;
   justify-content: space-between;
   margin-bottom: 50px;
-  font-size:2vw;
+  font-size:1vw;
 }
 
 .cartButtonDisabled{
@@ -77,12 +77,12 @@
   padding: 6px;
   justify-content: space-between;
   margin-bottom: 50px;
-  font-size:2vw;
+  font-size:1vw;
 }
 
 .cartButtonDisabled:hover{
-  background-color: white;
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 span{
