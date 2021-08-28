@@ -161,6 +161,11 @@ function CreateProduct() {
                     value={product.stock} onChange={handleChangeInput} />
                 </div>
                 <div className="row">
+                    <label htmlFor="number">Testing Information</label>
+                    <input type="number" name="testing" id="testing" required
+                    value={product.testing} onChange={handleChangeInput} />
+                </div>
+                <div className="row">
                     <label htmlFor="description">Description</label>
                     <textarea type="text" name="description" id="description" required
                     value={product.description} rows="5" onChange={handleChangeInput} />
