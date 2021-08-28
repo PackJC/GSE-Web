@@ -6,7 +6,7 @@ function BtnRender({product, deleteProduct}) {
     const state = useContext(GlobalState)
     const [isAdmin] = state.userAPI.isAdmin
     const addCart = state.userAPI.addCart
-
+    const product = state.userAPI.product
 
     return (
         <div className="row_btn">
@@ -22,9 +22,18 @@ function BtnRender({product, deleteProduct}) {
                     </Link>
                 </>
                 : <>
-                    <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
-                        Add To Cart
-                    </Link>
+                }
+                if(product.stock === 0){
+                  <button type="button" disabled className="cartButtonDisabled">
+                      OUT OF STOCK
+                  </button>
+                }
+                else{
+                  <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
+                      Add To Cart
+                  </Link>
+                }
+
 
                 </>
             }
