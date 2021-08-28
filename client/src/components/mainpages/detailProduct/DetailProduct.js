@@ -5,10 +5,10 @@ import ProductItem from '../utils/productItem/ProductItem'
 
 function checkStock(stock){
   if(stock < 100){
-    return   <span style={{ color: "red" }}>${stock}</span>
+    return   <span style={{ color: "red" }}>Only {stock} left!</span>
   }
   else{
-    return  <span>${stock}</span>
+    return
   }
 }
 function DetailProduct() {
