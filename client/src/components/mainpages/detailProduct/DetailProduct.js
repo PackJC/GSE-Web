@@ -3,12 +3,12 @@ import {useParams, Link} from 'react-router-dom'
 import {GlobalState} from '../../../GlobalState'
 import ProductItem from '../utils/productItem/ProductItem'
 
-function checkPrice(price){
-  if(price < 100){
-    return   <span style={{ color: "red" }}>${price}</span>
+function checkStock(stock){
+  if(stock < 100){
+    return   <span style={{ color: "red" }}>${stock}</span>
   }
   else{
-    return  <span>${price}</span>
+    return  <span>${stock}</span>
   }
 }
 function DetailProduct() {
@@ -37,8 +37,8 @@ function DetailProduct() {
                     <div className="row">
                     <h2>{detailProduct.title}</h2>
                     </div>
-                    <span>$ {checkPrice(detailProduct.price)}</span>
-
+                    <span>{detailProduct.price}</span>
+                    <span>{checkStock(detailProduct.stock)}</span>
                     <p>{detailProduct.description}</p>
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>

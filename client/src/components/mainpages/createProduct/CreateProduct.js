@@ -156,9 +156,9 @@ function CreateProduct() {
                     value={product.price} onChange={handleChangeInput} />
                 </div>
                 <div className="row">
-                    <label htmlFor="number">Amount</label>
-                    <input type="number" name="amount" id="amount" required
-                    value={product.amount} onChange={handleChangeInput} />
+                    <label htmlFor="number">Stock Quantity</label>
+                    <input type="number" name="stock" id="stock" required
+                    value={product.stock} onChange={handleChangeInput} />
                 </div>
                 <div className="row">
                     <label htmlFor="description">Description</label>

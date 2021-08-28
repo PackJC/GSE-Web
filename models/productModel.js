@@ -42,7 +42,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    amount:{
+    stock:{
         type: Number,
         default: 0
     },
