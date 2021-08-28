@@ -44,8 +44,9 @@ function DetailProduct() {
               <span>{checkStock(detailProduct.stock)}</span>
               <p>{detailProduct.description}</p>
               <br/>
-              <button type="button" disabled>Click Me!</button>
-
+              <button type="button" disabled className="cartButton">
+                  Add to cart
+              </button>
               <p>{detailProduct.content}</p>
               <br/>
 
