@@ -63,8 +63,28 @@
   justify-content: space-between;
   margin-bottom: 50px;
   font-size:2vw;
-
 }
+
+.cartButtonDisabled{
+  background: darkgray;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 6px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-size:2vw;
+}
+
+.cartButtonDisabled:hover{
+  background-color: white;
+  color: black;
+}
+
 span{
   color: #A4C5AF;
   font-weight: bold;
