@@ -4,8 +4,11 @@ import {GlobalState} from '../../../GlobalState'
 import ProductItem from '../utils/productItem/ProductItem'
 
 function checkStock(stock){
-  if(stock < 100){
+  if(stock < 100 && stock > 0){
     return   <span style={{ color: "red" }}>Only {stock} left!</span>
+  }
+  if(stock < 1){
+    return   <span style={{ color: "red" }}>Out of stock!</span>
   }
   else{
     return
