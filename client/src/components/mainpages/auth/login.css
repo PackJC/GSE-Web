@@ -7,30 +7,25 @@
 }
 .page{
     max-width: 800px;
-    border: 2px solid #A4C5AF;
-    border-radius: 5px;
-    padding: 30px;
-    margin: 50px auto;
+    margin: 10% auto;
     text-align: center;
-}
-.page a{
-  background: #A4C5AF;
-  padding: 10px 25px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 8px;
-  text-align: center;
+    max-width: 50%;
+
 }
 
 .aboutUs{
   text-align: center;
-  padding: 30px;
+  font-size: 2vw;
+  font-weight:bold;
+  color:darkgray;
+  margin: 5%;
 
 }
 .blurb{
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
+  font-size: 1vw;
+  color:#A4C5AF;
 
 }
 
@@ -80,7 +75,10 @@
 }
 .loginButton{
   background:#A4C5AF;
-
+  border-radius: 8px;
+  color:white;
+  margin: 5%;
+  font-size:1vw;
 }
 .registerButton{
   background: #CD5C5C;

@@ -29,8 +29,7 @@ export const Container = styled.div`
 export const Column = styled.div`
 flex-direction: column;
 display: grid;
-margin-left: 15%;
-margin-right: 15%;
+
 `;
 
 

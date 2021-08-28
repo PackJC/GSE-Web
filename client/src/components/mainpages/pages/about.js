@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Privacy(){
   return(
-    <div>
       <div class="page">
         <p class="aboutUs">About Us</p>
         <p class="blurb">We’re proud connoisseurs of the hemp-derived oil industry.
@@ -10,11 +9,6 @@ export default function Privacy(){
          We are located in the beautiful mountains of the Smokies. The Great Smoky Mountains climate makes it an ideal place to cultivate hemp.
          Our goal is to provide premium hemp oils to the community and create the most wanted, best quality products offered at the most reasonable prices.
         </p>
-        <a className="loginButton" href = "mailto: greatsmokyextracts@gmail.com">CONTACT US</a>
-
       </div>
-    </div>
-
-
   )
 }

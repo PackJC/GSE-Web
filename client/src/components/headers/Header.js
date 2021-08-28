@@ -57,8 +57,8 @@ function Header() {
                     <Link to="/"><img src={Logo} alt="" width="150" /></Link>
             </li>
                 <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
-                <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/knowledge">Knowledge Base</Link></li>
+                <li><Link to="/about">About Us</Link></li>
 
                 {isAdmin && adminRouter()}
 

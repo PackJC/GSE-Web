@@ -31,7 +31,7 @@ function DetailProduct() {
     },[params.id, products])
 
     if(detailProduct.length === 0) return null;
-
+    if(detailProduct.stock < 5) return (<p>low stock</p>);
     return (
         <>
             <div className="detail detail1">
@@ -51,7 +51,8 @@ function DetailProduct() {
                     </Link>
                     <p>{detailProduct.content}</p>
                     <br/>
-                    <p>Testing Information: {detailProduct.testings}</p>
+
+                    <p>View Certificate Of Analysis: {detailProduct.testing}</p>
 
                 </div>
             </div>
