@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 80px 60px;
 background: black;
 position: absolute;
 bottom: 0;
@@ -28,9 +27,10 @@ export const Container = styled.div`
 `
 
 export const Column = styled.div`
-display: flex;
 flex-direction: column;
-width: 200%;
+display: grid;
+margin-left: 15%;
+margin-right: 15%;
 `;
 
 
@@ -40,13 +40,12 @@ max-width:100%;
 margin: 0 auto;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-grid-column-gap: 15%;
+
 
 
 @media (max-width: 1000px) {
 	display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
 
 }
 `;
@@ -54,8 +53,8 @@ grid-column-gap: 15%;
 export const FooterLink = styled.a`
 color: #A4C5AF;
 font-size:1vw;
-text-decoration: none;
-margin:auto;
+margin: 0;
+padding: 0;
 &:hover {
 	color:  #A4C5AF;
 	transition: 200ms ease-in;
@@ -63,12 +62,12 @@ margin:auto;
 `;
 
 export const Heading = styled.p`
-font-size:1vw;
+font-size:1.5vw;
 color: darkgray;
 font-weight: bold;
 `;
 export const Copyright = styled.p`
-font-size: 0.5vw;
+font-size: 1vw;
 color: #A4C5AF;
 margin: auto;
 `;

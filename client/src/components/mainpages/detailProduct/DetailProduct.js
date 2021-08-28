@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {useParams, Link} from 'react-router-dom'
 import {GlobalState} from '../../../GlobalState'
+import ProductItem from '../utils/productItem/ProductItem'
 
 
 function DetailProduct() {
@@ -39,7 +40,17 @@ function DetailProduct() {
 
                 </div>
             </div>
-
+            <div>
+                <h2>Related products</h2>
+                <div className="products">
+                    {
+                        products.map(product => {
+                            return product.category === detailProduct.category
+                                ? <ProductItem key={product._id} product={product} /> : null
+                        })
+                    }
+                </div>
+            </div>
             <div>
 
             </div>

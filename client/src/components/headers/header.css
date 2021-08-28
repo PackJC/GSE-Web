@@ -16,7 +16,7 @@ header a{
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size:20px;
+    font-size:2vw;
 }
 header ul li{
     display: inline-block;
