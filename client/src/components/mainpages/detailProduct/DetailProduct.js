@@ -53,8 +53,6 @@ function DetailProduct() {
                   OUT OF STOCK
               </button>
               <br/>
-
-              <p>View Certificate Of Analysis: {detailProduct.testing}</p>
               <Link to="/coa" className="cartButton">
                   View Certificate Of Analysis
               </Link>
