@@ -1,30 +1,29 @@
 const mongoose = require('mongoose')
 
 const reviewSchema = new mongoose.Schema({
-  review_id:{
-      type: String,
+  id:{
+      type: Number,
       unique: true,
       trim: true,
       required: true
   },
-    name: {
-        type: String,
+    product_id: {
+        type: Number,
         required: true,
         trim: true
     },
-    email: {
+    name: {
         type: String,
         required: true,
         unique: true
     },
     rate: {
-        type: int,
+        type: Number,
         required: true
     },
     desc: {
-        type: String,
-        default: 0
-    }
+        type: String
+          }
 }, {
     timestamps: true
 })

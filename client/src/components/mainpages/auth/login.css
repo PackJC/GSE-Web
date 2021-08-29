@@ -28,7 +28,10 @@
   color:#A4C5AF;
 
 }
+.question{
+  font-weight:bold;
 
+}
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;

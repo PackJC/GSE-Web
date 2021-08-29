@@ -5,7 +5,7 @@ export default function Knowledge(){
       <div class="page">
         <p class="aboutUs">Knowledge Center</p>
         <div class="blurb">
-          <p>
+          <p class="question">
             Is THC-O Legal?
           </p>
           <p>
@@ -21,7 +21,7 @@ export default function Knowledge(){
           <br/>
           <hr/>
           <br/>
-          <p>
+          <p class="question">
             Is this Fake/Synthetic?
           </p>
           <p>
@@ -30,7 +30,7 @@ export default function Knowledge(){
           <br/>
           <hr/>
           <br/>
-          <p>
+          <p class="question">
           Where are the lab results?
           </p>
           <p>
@@ -39,7 +39,7 @@ export default function Knowledge(){
           <br/>
           <hr/>
           <br/>
-          <p>
+          <p class="question">
             Will a THC-O product make me test positive during a drug screening?
           </p>
           <p>
