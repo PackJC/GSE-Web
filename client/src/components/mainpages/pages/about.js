@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Privacy(){
+export default function About(){
+
   return(
       <div class="page">
         <p class="aboutUs">About Us</p>

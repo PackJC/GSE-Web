@@ -14,7 +14,11 @@ function checkStock(stock){
     return
   }
 }
+
+
+
 function DetailProduct() {
+
     const params = useParams()
     const state = useContext(GlobalState)
     const [products] = state.productsAPI.products
@@ -32,6 +36,7 @@ function DetailProduct() {
 
     if(detailProduct.length === 0) return null;
     if(detailProduct.stock < 1) return (
+
       <>
       <div className="detail detail1">
               <img src={detailProduct.images.url} alt="" />
@@ -47,11 +52,9 @@ function DetailProduct() {
               <button type="button" disabled className="cartButtonDisabled">
                   OUT OF STOCK
               </button>
-              <p>{detailProduct.content}</p>
               <br/>
 
               <p>View Certificate Of Analysis: {detailProduct.testing}</p>
-
           </div>
       </div>
 
@@ -93,7 +96,11 @@ function DetailProduct() {
                     <br/>
 
                     <p>View Certificate Of Analysis: {detailProduct.testing}</p>
+                    {
+                      <div>
 
+                    </div>
+}
                 </div>
             </div>
 

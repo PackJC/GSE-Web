@@ -10,7 +10,7 @@ import Knowledge from './pages/knowledge'
 import Shipping from './pages/shipping'
 import Return from './pages/return'
 import Privacy from './pages/privacy'
-
+import CoA from './pages/CoA'
 
 import OrderHistory from './history/OrderHistory'
 import OrderDetails from './history/OrderDetails'
@@ -36,6 +36,7 @@ function Pages() {
             <Route path="/shipping" exact component={Shipping} />
             <Route path="/return" exact component={Return} />
             <Route path="/privacy" exact component={Privacy} />
+            <Route path="/CoA" exact component={CoA} />
 
             <Route path="/detail/:id" exact component={DetailProduct} />
 
