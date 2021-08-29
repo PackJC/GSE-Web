@@ -1,9 +1,13 @@
 import React from "react";
+import IMG from "././AboutUsConceptPNG.png";
 
 export default function About(){
 
   return(
+
       <div class="page">
+      <img src={IMG} width="200vw" height="200vh" alt="" />
+
         <p class="aboutUs">About Us</p>
         <p class="blurb">We’re proud connoisseurs of the hemp-derived oil industry.
           With our first round of products, we are excited to offer a premium selection of some of the best hemp-derived oil in the world.
