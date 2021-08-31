@@ -53,11 +53,13 @@ function DetailProduct() {
                   OUT OF STOCK
               </button>
               <br/>
-              <p>{detailProduct.content}</p>
-              <br/>
+
               <Link to="/coa" className="cartButton">
                   View Certificate Of Analysis
               </Link>
+              <br/>
+              <p>{detailProduct.content}</p>
+              <br/>
           </div>
       </div>
 
@@ -89,18 +91,23 @@ function DetailProduct() {
                     <span>${detailProduct.price}</span>
                     <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
-                    <p>{detailProduct.description}</p>
-                    <br/>
+
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
                     </Link>
-                    <p>{detailProduct.content}</p>
                     <br/>
 
                     <Link to="/coa" className="cartButton">
                         View Certificate Of Analysis
-                    </Link>                    {
+                    </Link>
+                    <br/>
+ 
+                    <p>{detailProduct.description}</p>
+                    <br/>
+                    <p>{detailProduct.content}</p>
+
+                    {
                       <div>
 
                     </div>
