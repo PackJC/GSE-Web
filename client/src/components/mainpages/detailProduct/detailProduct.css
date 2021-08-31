@@ -27,7 +27,6 @@
     margin: 10px 0;
     opacity: 0.8;
     font-size:2vw;
-
 }
 .box-detail .cart{
     background: #A4C5AF;
@@ -38,7 +37,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size:2vw;
-
     border-radius: 8px;
 }
 .products{
@@ -51,8 +49,8 @@
 }
 .rowBtn{
   margin: 20px;
-
 }
+
 .cartButton{
   background: #A4C5AF;
   border-radius: 8px;
@@ -61,7 +59,6 @@
   text-transform: uppercase;
   color: white;
   font-weight: 600;
-  letter-spacing: 2px;
   padding: 6px;
   justify-content: space-between;
   margin-bottom: 50px;
