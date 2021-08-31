@@ -17,7 +17,7 @@ const reviewCtrl = {
             const {name} = req.body;
             const review = await Review.findOne({name})
 
-            const newReview = new Category({review})
+            const newReview = new Review({review})
 
             await newReview.save()
             res.json({msg: "Created a new Review"})
