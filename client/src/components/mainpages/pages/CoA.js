@@ -6,7 +6,11 @@ export default function CoA(){
 
   return(
       <div>
-        <embed src={PDF} width="500vw" height="500vh" margin="auto" alt="pdf" />
+      <div>
+      <center>
+        <embed src={PDF} alt="pdf"width="500vw" height="500vh"/>
+        </center>
+      </div>
       </div>
   )
 }
