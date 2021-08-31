@@ -48,7 +48,10 @@ function DetailProduct() {
               <br/>
               <span>{checkStock(detailProduct.stock)}</span>
               <br/>
-
+              <p>{detailProduct.content}</p>
+              <br/>
+              <p>{detailProduct.description}</p>
+              <br/>
               <button type="button" disabled className="cartButtonDisabled">
                   OUT OF STOCK
               </button>
@@ -57,11 +60,7 @@ function DetailProduct() {
               <Link to="/coa" className="cartButton">
                   View Certificate Of Analysis
               </Link>
-              <br/>
-              <p>{detailProduct.content}</p>
-              <br/>
-              <p>{detailProduct.description}</p>
-              <br/>
+
           </div>
       </div>
 
@@ -94,7 +93,10 @@ function DetailProduct() {
                     <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
                     <br/>
-
+                    <p>{detailProduct.description}</p>
+                    <br/>
+                    <p>{detailProduct.content}</p>
+                    <br/>
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
@@ -106,9 +108,6 @@ function DetailProduct() {
                     </Link>
                     <br/>
 
-                    <p>{detailProduct.description}</p>
-                    <br/>
-                    <p>{detailProduct.content}</p>
 
                     {
                       <div>
