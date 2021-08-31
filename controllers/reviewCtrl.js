@@ -29,7 +29,7 @@ const reviewCtrl = {
         try {
             const reviews = await Review.findOne({review: req.params.id})
             if(reviews) return res.status(400).json({
-                msg: "Please delete all products with a relationship."
+                msg: "Please delete all reviews with a relationship."
             })
 
             await Review.findByIdAndDelete(req.params.id)
