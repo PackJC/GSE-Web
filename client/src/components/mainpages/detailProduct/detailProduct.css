@@ -49,7 +49,10 @@
   background-color: white;
   color: #A4C5AF;
 }
+.rowBtn{
+  margin: 20px;
 
+}
 .cartButton{
   background: #A4C5AF;
   border-radius: 8px;

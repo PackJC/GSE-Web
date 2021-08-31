@@ -56,7 +56,7 @@ function DetailProduct() {
                   OUT OF STOCK
               </button>
               <br/>
-              <div className="row">
+              <div className="rowBtn">
 
               <Link to="/coa" className="cartButton">
                   View Certificate Of Analysis
@@ -98,7 +98,7 @@ function DetailProduct() {
                     <br/>
                     <p>{detailProduct.content}</p>
                     <br/>
-                    <div className="row">
+                    <div className="rowBtn">
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
                         Add to cart
@@ -106,7 +106,7 @@ function DetailProduct() {
                     </div>
 
                     <br/>
-                    <div className="row">
+                    <div className="rowBtn">
 
                     <Link to="/coa" className="cartButton">
                         View Certificate Of Analysis
