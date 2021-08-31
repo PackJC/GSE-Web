@@ -47,8 +47,7 @@ function DetailProduct() {
               <span>${detailProduct.price}</span>
               <br/>
               <span>{checkStock(detailProduct.stock)}</span>
-              <p>{detailProduct.description}</p>
-              <br/>
+
               <button type="button" disabled className="cartButtonDisabled">
                   OUT OF STOCK
               </button>
@@ -59,6 +58,8 @@ function DetailProduct() {
               </Link>
               <br/>
               <p>{detailProduct.content}</p>
+              <br/>
+              <p>{detailProduct.description}</p>
               <br/>
           </div>
       </div>
@@ -102,7 +103,7 @@ function DetailProduct() {
                         View Certificate Of Analysis
                     </Link>
                     <br/>
- 
+
                     <p>{detailProduct.description}</p>
                     <br/>
                     <p>{detailProduct.content}</p>
