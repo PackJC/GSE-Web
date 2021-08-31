@@ -2,31 +2,31 @@ import React, {useState, useContext} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
 
-function Reviews() {
+function Categories() {
     const state = useContext(GlobalState)
-    const [reviews] = state.reviewsAPI.reviews
-    const [review, setReview] = useState('')
+    const [categories] = state.categoriesAPI.categories
+    const [category, setCategory] = useState('')
     const [token] = state.token
-    const [callback, setCallback] = state.reviewsAPI.callback
+    const [callback, setCallback] = state.categoriesAPI.callback
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
 
-    const createReview = async e =>{
+    const createCategory = async e =>{
         e.preventDefault()
         try {
             if(onEdit){
-                const res = await axios.put(`/api/review/${id}`, {name: review}, {
+                const res = await axios.put(`/api/category/${id}`, {name: category}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
             }else{
-                const res = await axios.post('/api/review', {name: review}, {
+                const res = await axios.post('/api/category', {name: category}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
             }
             setOnEdit(false)
-            setReview('')
+            setCategory('')
             setCallback(!callback)
 
         } catch (err) {
@@ -34,16 +34,15 @@ function Reviews() {
         }
     }
 
-    const editReview = async (id, name) =>{
+    const editCategory = async (id, name) =>{
         setID(id)
-        //needs to be renamed setName
-        setReview(name)
+        setCategory(name)
         setOnEdit(true)
     }
 
-    const deleteReview = async id =>{
+    const deleteCategory = async id =>{
         try {
-            const res = await axios.delete(`/api/review/${id}`, {
+            const res = await axios.delete(`/api/category/${id}`, {
                 headers: {Authorization: token}
             })
             alert(res.data.msg)
@@ -54,23 +53,23 @@ function Reviews() {
     }
 
     return (
-        <div className="reviews">
-            <form onSubmit={createReview}>
-                <label htmlFor="review">Review</label>
-                <input type="text" name="review" value={review} required
-                onChange={e => setReview(e.target.value)} />
+        <div className="categories">
+            <form onSubmit={createCategory}>
+                <label htmlFor="category">Category</label>
+                <input type="text" name="category" value={category} required
+                onChange={e => setCategory(e.target.value)} />
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
 
             <div className="col">
                 {
-                    reviews.map(review => (
-                        <div className="row" key={review._id}>
-                            <p>{review.name}</p>
+                    categories.map(category => (
+                        <div className="row" key={category._id}>
+                            <p>{category.name}</p>
                             <div className="editButtons">
-                                <button onClick={() => editReview(review._id, review.name)}>Edit</button>
-                                <button onClick={() => deleteReview(review._id)}>Delete</button>
+                                <button onClick={() => editCategory(category._id, category.name)}>Edit</button>
+                                <button onClick={() => deleteCategory(category._id)}>Delete</button>
                             </div>
                         </div>
                     ))
@@ -80,4 +79,4 @@ function Reviews() {
     )
 }
 
-export default Reviews
+export default Categories

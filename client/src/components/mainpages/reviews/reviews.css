@@ -1,38 +1,38 @@
-.categories{
+.reviews{
     max-width: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px auto;
 }
-.categories form{
+.reviews form{
     width: 290px;
     margin-bottom: 20px;
 }
-.categories label{
+.reviews label{
     display: block;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.categories input, button{
+.reviews input, button{
     height: 35px;
     border: none;
     outline: none;
     border-bottom: 1px solid #555;
 }
-.categories input{
+.reviews input{
     width: 210px;
 }
-.categories button{
+.reviews button{
     width: 70px;
     background: #A4C5AF;
     color: white;
     margin-left: 10px;
     border-radius: 8px;
 }
-.categories .row{
+.reviews .row{
     min-width: 290px;
     display: flex;
     justify-content: space-between;
