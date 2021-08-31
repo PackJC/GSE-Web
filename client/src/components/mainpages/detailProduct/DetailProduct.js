@@ -47,6 +47,7 @@ function DetailProduct() {
               <span>${detailProduct.price}</span>
               <br/>
               <span>{checkStock(detailProduct.stock)}</span>
+              <br/>
 
               <button type="button" disabled className="cartButtonDisabled">
                   OUT OF STOCK
@@ -92,6 +93,7 @@ function DetailProduct() {
                     <span>${detailProduct.price}</span>
                     <br/>
                     <span>{checkStock(detailProduct.stock)}</span>
+                    <br/>
 
                     <Link to="/cart" className="cartButton"
                     onClick={() => addCart(detailProduct)}>
