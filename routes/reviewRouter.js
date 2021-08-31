@@ -1,11 +1,11 @@
 const router = require('express').Router()
-const categoryCtrl = require('../controllers/reviewCtrl')
+const reviewCtrl = require('../controllers/reviewCtrl')
 const auth = require('../middleware/auth')
 const authAdmin = require('../middleware/authAdmin')
 
 
 router.route('/review')
-    .get(categoryCtrl.getReviews)
+    .get(reviewCtrl.getReviews)
     .post(auth, authAdmin, reviewCtrl.createReview)
 
 router.route('/review/:id')
