@@ -56,9 +56,17 @@ function Reviews() {
     return (
         <div className="reviews">
             <form onSubmit={createReview}>
-                <label htmlFor="review">Review</label>
+
+
+                <label htmlFor="review">Rate</label>
+                <input type="number" name="rate" value={review.rate} required
+                onChange={e => setReview(e.target.value)} />
+
+                <label htmlFor="review">Description</label>
                 <input type="text" name="review" value={review} required
                 onChange={e => setReview(e.target.value)} />
+
+
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
