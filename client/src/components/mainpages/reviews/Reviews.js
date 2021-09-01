@@ -11,7 +11,7 @@ function Reviews() {
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
     const [userName] = state.userAPI.name
-    review.user = userName
+    review.user = "test"
     review.date = "test"
 
     const createReview = async e =>{
