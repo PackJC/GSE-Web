@@ -68,7 +68,7 @@ function Reviews() {
                 <label htmlFor="description">Description</label>
                 <input type="text" name="review" value={review.description}
                 onChange={e => setReview(e.target.value)} />
-}
+
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
