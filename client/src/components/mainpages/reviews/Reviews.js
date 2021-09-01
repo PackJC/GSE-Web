@@ -11,8 +11,6 @@ function Reviews() {
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
     const [userName] = state.userAPI.name
-    review.user = "test"
-    review.date = "test"
 
     const createReview = async e =>{
         e.preventDefault()
@@ -77,7 +75,7 @@ function Reviews() {
                 {
                     reviews.map(review => (
                         <div className="row" key={review._id}>
-                            <p>{review.name}</p>
+                            <p>{userName}</p>
                             <div className="editButtons">
                                 <button onClick={() => editReview(review._id, review.name)}>Edit</button>
                                 <button onClick={() => deleteReview(review._id)}>Delete</button>
