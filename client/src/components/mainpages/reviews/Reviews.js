@@ -10,6 +10,7 @@ function Reviews() {
     const [callback, setCallback] = state.reviewsAPI.callback
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
+    const [userName] = state.userAPI.name
 
     const createReview = async e =>{
         e.preventDefault()
@@ -58,15 +59,15 @@ function Reviews() {
             <form onSubmit={createReview}>
 
 
-                <label htmlFor="review">Rate</label>
+                <label htmlFor="rate">Rate</label>
                 <input type="number" name="rate" value={review.rate} required
                 onChange={e => setReview(e.target.value)} />
-
-                <label htmlFor="review">Description</label>
-                <input type="text" name="review" value={review} required
+                <br/>
+                <label htmlFor="description">Description</label>
+                <input type="text" name="review" value={review.description}
                 onChange={e => setReview(e.target.value)} />
-
-
+                {review.user = userName }
+                {review.date = "test"}
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
