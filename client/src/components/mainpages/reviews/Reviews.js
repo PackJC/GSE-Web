@@ -11,6 +11,8 @@ function Reviews() {
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
     const [userName] = state.userAPI.name
+    review.user = userName
+    review.date = "test"
 
     const createReview = async e =>{
         e.preventDefault()
@@ -66,8 +68,7 @@ function Reviews() {
                 <label htmlFor="description">Description</label>
                 <input type="text" name="review" value={review.description}
                 onChange={e => setReview(e.target.value)} />
-                {review.user = userName }
-                {review.date = "test"}
+}
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
