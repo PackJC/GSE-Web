@@ -5,23 +5,22 @@ import axios from 'axios'
 function Reviews() {
     const state = useContext(GlobalState)
     const [reviews] = state.reviewsAPI.reviews
-    const [review, setReview] = useState('')
+    const [name, setReview] = useState('')
     const [token] = state.token
     const [callback, setCallback] = state.reviewsAPI.callback
     const [onEdit, setOnEdit] = useState(false)
     const [id, setID] = useState('')
-    const [userName] = state.userAPI.name
 
     const createReview = async e =>{
         e.preventDefault()
         try {
             if(onEdit){
-                const res = await axios.put(`/api/review/${id}`, {name: review}, {
+                const res = await axios.put(`/api/review/${id}`, {name: name}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
             }else{
-                const res = await axios.post('/api/review', {name: review}, {
+                const res = await axios.post('/api/review', {name: name}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
@@ -59,23 +58,22 @@ function Reviews() {
             <form onSubmit={createReview}>
 
 
-                <label htmlFor="rate">Rate</label>
-                <input type="number" name="rate" value={review.rate} required
+
+                <br/>
+                <label htmlFor="name">name</label>
+                <input type="text" name="name" value={name}
                 onChange={e => setReview(e.target.value)} />
                 <br/>
-                <label htmlFor="description">Description</label>
-                <input type="text" name="review" value={review.description}
-                onChange={e => setReview(e.target.value)} />
 
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
 
+
             <div className="col">
                 {
                     reviews.map(review => (
                         <div className="row" key={review._id}>
-                            <p>{userName}</p>
                             <div className="editButtons">
                                 <button onClick={() => editReview(review._id, review.name)}>Edit</button>
                                 <button onClick={() => deleteReview(review._id)}>Delete</button>
