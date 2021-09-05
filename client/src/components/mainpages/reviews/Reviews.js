@@ -5,7 +5,7 @@ import axios from 'axios'
 function Reviews() {
     const state = useContext(GlobalState)
     const [reviews] = state.reviewsAPI.reviews
-    const [name, setReview] = useState('')
+    const [review, setReview] = useState('')
     const [token] = state.token
     const [callback, setCallback] = state.reviewsAPI.callback
     const [onEdit, setOnEdit] = useState(false)
@@ -15,12 +15,12 @@ function Reviews() {
         e.preventDefault()
         try {
             if(onEdit){
-                const res = await axios.put(`/api/review/${id}`, {name: name}, {
+                const res = await axios.put(`/api/review/${id}`, {name: review}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
             }else{
-                const res = await axios.post('/api/review', {name: name}, {
+                const res = await axios.post('/api/review', {name: review}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
@@ -60,8 +60,8 @@ function Reviews() {
 
 
                 <br/>
-                <label htmlFor="name">name</label>
-                <input type="text" name="name" value={name}
+                <label htmlFor="review">review</label>
+                <input type="text" name="review" value={review} required
                 onChange={e => setReview(e.target.value)} />
                 <br/>
 
