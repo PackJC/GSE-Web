@@ -23,7 +23,7 @@ function Categories() {
                 const res = await axios.post('/api/category', {name: category}, {
                     headers: {Authorization: token}
                 })
-                alert(res.data.msg)
+                alert(res.data.msg + "Line 26")
             }
             setOnEdit(false)
             setCategory('')

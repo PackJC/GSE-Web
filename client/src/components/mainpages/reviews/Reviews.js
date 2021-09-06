@@ -15,6 +15,7 @@ function Reviews() {
         e.preventDefault()
         try {
             if(onEdit){
+              console.log(review);
                 const res = await axios.put(`/api/review/${id}`, {name: review}, {
                     headers: {Authorization: token}
                 })
@@ -23,7 +24,7 @@ function Reviews() {
                 const res = await axios.post('/api/review', {name: review}, {
                     headers: {Authorization: token}
                 })
-                alert(res.data.msg)
+                alert(res.data.msg + "Line 26")
             }
             setOnEdit(false)
             setReview('')
@@ -56,16 +57,9 @@ function Reviews() {
     return (
         <div className="reviews">
             <form onSubmit={createReview}>
-
-
-
-                <br/>
-                <label htmlFor="review">review</label>
-                <input type="text" name="review" value={review} required
+                <label htmlFor="review">Review</label>
+                <input type="text" name="review" defaultValue={review} required
                 onChange={e => setReview(e.target.value)} />
-                <br/>
-
-
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
 
@@ -74,6 +68,7 @@ function Reviews() {
                 {
                     reviews.map(review => (
                         <div className="row" key={review._id}>
+                        <p>{review.name}</p>
                             <div className="editButtons">
                                 <button onClick={() => editReview(review._id, review.name)}>Edit</button>
                                 <button onClick={() => deleteReview(review._id)}>Delete</button>
