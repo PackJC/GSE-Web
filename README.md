@@ -13,4 +13,11 @@ Run the Express server only
 Run the React client only
 ### `npm run client`
 
+# Stack (MERN)
+### Node.JS 
+### ReactJS 
+### Express 
+### MongoDB 
+### Auth0 
+### Paypal
  Server runs on http://localhost:5000 and client on http://localhost:3000
