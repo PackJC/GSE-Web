@@ -9,7 +9,7 @@ export default function Knowledge(){
             Is THC-O Legal?
           </p>
           <p>
-            Yes, it is legal. We’re protected under the farm bill passed by Congress in 2018, because the molecule was derived from a chain of custody that began with federally legal hemp plants.
+            Yes, it is legal in 38 states. We’re protected under the farm bill passed by Congress in 2018, because the molecule was derived from a chain of custody that began with federally legal hemp plants.
           </p>
 
           <p>
@@ -22,10 +22,10 @@ export default function Knowledge(){
           <hr/>
           <br/>
           <p class="question">
-            Is this Fake/Synthetic?
+            What states prohibit this product?
           </p>
           <p>
-            No, it is not fake or synthetic. It is made in a contracted lab using Delta-8 THC Distillate.
+            Montana, Idaho, Utah, Colorado, Arizona, Alaska, Iowa, Arkansas, Mississippi, Maryland, and Delaware. If you are from this states, your order will be rejected and funds will be refunded.
           </p>
           <br/>
           <hr/>
@@ -34,7 +34,7 @@ export default function Knowledge(){
           Where are the lab results?
           </p>
           <p>
-          Lab results can be found under the description of each product. If any information is missing, please get into contact with us!
+          Lab results can be found under the description of each product, also can be reached at https:///www.greatsmokyextracts.com/coa  If any information is missing, please get into contact with us!
           </p>
           <br/>
           <hr/>

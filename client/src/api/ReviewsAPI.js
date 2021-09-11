@@ -8,6 +8,7 @@ function ReviewsAPI() {
     useEffect(() =>{
         const getReviews = async () =>{
             const res = await axios.get('/api/review')
+            console.log(res.data)
             setReviews(res.data)
         }
 

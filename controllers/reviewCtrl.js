@@ -14,9 +14,11 @@ const reviewCtrl = {
         try {
             // if user have role = 1 ---> admin
             // only admin can create , delete and update category
-            const {name} = req.body;
-
-            const newReview = new Review({name})
+            const {name, rating} = req.body;
+            //how I will assign review to user
+            let user1 = req.user.id;
+            user = user1;
+            const newReview = new Review({name, rating, user})
 
             await newReview.save()
 
@@ -36,8 +38,8 @@ const reviewCtrl = {
     },
     updateReview: async(req, res) =>{
         try {
-            const {name} = req.body;
-            await Review.findOneAndUpdate({_id: req.params.id}, {name})
+            const {name, rating} = req.body;
+            await Review.findOneAndUpdate({_id: req.params.id}, {name, rating, user})
 
             res.json({msg: "Updated a Review"})
         } catch (err) {

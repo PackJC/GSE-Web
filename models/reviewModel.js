@@ -6,7 +6,15 @@ const reviewSchema = new mongoose.Schema({
     required: true,
     trim: true,
     unique: true
-  }
+  },
+  rating: {
+    type: Number,
+    required: true
+  },
+  user: {
+    type: String,
+    required: true
+    }
 }, {
     timestamps: true
 })
